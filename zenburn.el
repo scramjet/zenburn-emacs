@@ -275,14 +275,18 @@ static char *gnus-pointer[] = {
             ((t (:foreground ,zenburn-blue+1))))
           `(font-lock-function-name
             ((t (:foreground ,zenburn-blue))))
-          '(font-lock-keyword
-            ((t (:inherit zenburn-primary-1))))
+          ;; '(font-lock-keyword
+          ;;   ((t (:inherit zenburn-primary-1))))
+          `(font-lock-keyword
+            ((t (:foreground ,zenburn-orange))))
           '(font-lock-negation-char
             ((t (:inherit zenburn-primary-1))))
           '(font-lock-preprocessor
             ((t (:inherit zenburn-blue))))
+          ;; '(font-lock-string
+          ;;   ((t (:inherit zenburn-red))))
           '(font-lock-string
-            ((t (:inherit zenburn-red))))
+            ((t (:inherit zenburn-green+2))))
           '(font-lock-type
             ((t (:inherit zenburn-primary-3))))
           `(font-lock-variable-name
@@ -398,8 +402,9 @@ static char *gnus-pointer[] = {
           '(trailing-whitespace ((t (:inherit font-lock-warning))))
           '(highlight ((t (:underline t))))
           '(paren ((t (:inherit zenburn-lowlight-1))))
-          '(show-paren-mismatch ((t (:inherit font-lock-warning))))
-          `(show-paren-match ((t (:foreground ,zenburn-blue-1 :underline t))))
+;;          '(show-paren-mismatch ((t (:inherit font-lock-warning))))
+          `(show-paren-mismatch ((t (:foreground ,zenburn-bg :background ,zenburn-red))))
+          `(show-paren-match ((t (:foreground ,zenburn-bg :background ,zenburn-yellow))))
           '(match ((t (:weight bold))))
 
           `(button ((t (:foreground ,zenburn-yellow :background "#506070"
@@ -843,7 +848,8 @@ static char *gnus-pointer[] = {
           '(org-done ((t (:bold t :weight bold :foreground "#afd8af"))))   ;; zenburn-green+3
           '(org-formula ((t (:foreground "#d0bf8f"))))                     ;; zenburn-yellow-2
           '(org-headline-done ((t (:foreground "#afd8af"))))               ;; zenburn-green+3
-          '(org-hide ((t (:foreground "#282828"))))                        ;; zenburn-bg slight darker
+          ;; '(org-hide ((t (:foreground ,zen :background ,zenburn-bg))))                        ;; zenburn-bg slight darker
+          `(org-hide ((t (:foreground ,zenburn-bg :background ,zenburn-bg))))                        ;; zenburn-bg slight darker
           '(org-level-1 ((t (:foreground "#dfaf8f"))))                     ;; zenburn-orange
           '(org-level-2 ((t (:foreground "#f0dfaf"))))                     ;; zenburn-yellow
           '(org-level-3 ((t (:foreground "#8cd0d3"))))                     ;; zenburn-blue
