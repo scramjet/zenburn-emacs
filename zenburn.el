@@ -404,13 +404,14 @@ static char *gnus-pointer[] = {
           '(paren ((t (:inherit zenburn-lowlight-1))))
 ;;          '(show-paren-mismatch ((t (:inherit font-lock-warning))))
           `(show-paren-mismatch ((t (:foreground ,zenburn-bg :background ,zenburn-red))))
-          `(show-paren-match ((t (:foreground ,zenburn-bg :background ,zenburn-yellow))))
+          `(show-paren-match ((t (:foreground ,zenburn-bg :background ,zenburn-blue-3))))
           '(match ((t (:weight bold))))
 
           `(button ((t (:foreground ,zenburn-yellow :background "#506070"
                                     :weight bold :underline t))))
 
-          `(cursor ((t (:background "#aaaaaa" :foreground nil))))
+;;          `(cursor ((t (:background "#aaaaaa" :foreground ,zenburn-bg))))
+          `(cursor ((t (:background "#007000" :foreground ,zenburn-bg))))
           '(hover-highlight ((t (:underline t :foreground "#f8f893"))))
           '(menu ((t nil)))
           '(mouse ((t (:inherit zenburn-foreground))))
